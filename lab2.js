@@ -1,4 +1,4 @@
-﻿var http = require('http');
+var http = require('http');
 
 
 var url=require('url');
@@ -21,7 +21,7 @@ var result =0;
 	if(method=="add")
 	{
 		result =x+y;
-		res.write(x + '+' + y + '=' + result);
+		res.write(x + '+' + y + '=' + result);//display results to screen
 	}
 	else if(method=="subtract")
 	{
@@ -50,9 +50,6 @@ var result =0;
 
 
 
-
-//display results to screen
-//res.write('sub-total: ' + operator + '<br />Tax: ' + x + '<br />Total: ' +y);
 
 res.end();
 
